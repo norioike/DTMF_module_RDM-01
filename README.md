@@ -24,9 +24,10 @@ RDM-01　-DTMF decoder module- manual
  
  ## 使い方
   1. **信号の取得方法**
+  
   RDM-01は5つのGPIOとVCC、GNDの計７つのピンを使います。
 
- ５つのGPIOのうち４つは、１６種類あるDTMF信号の、何番なのかを表現するためにあり、１つは取得できたことを伝えるためにあります。
+ 5つのGPIOのうち4つは、16種類あるDTMF信号の、何番なのかを表現するためにあり、1つは取得できたことを伝えるためにあります。
   
 ![RDMdetal](http://www.rino-make-fun.com/wp-content/uploads/2019/01/RDM-01View-1.png)
  
@@ -34,9 +35,9 @@ RDM-01　-DTMF decoder module- manual
  - +5V -> ５Vピン　
  - GND -> GNDピン
  - Q1 -> 4bit表現のうち**0bit**を表現するピン
- - Q２ -> 4bit表現のうち**1bit**を表現するピン
- - Q３ -> 4bit表現のうち**2bit**を表現するピン
- - Q４ -> 4bit表現のうち**3bit**を表現するピン
+ - Q2 -> 4bit表現のうち**1bit**を表現するピン
+ - Q3 -> 4bit表現のうち**2bit**を表現するピン
+ - Q4 -> 4bit表現のうち**3bit**を表現するピン
  - StD -> DTMF信号が取得できたときに、立ち上がるピン。ArduinoではInterruptPinを利用すると便利です。
 
 **このモジュールは５V駆動になります。当然出力も5Vとなるので、3.3V等で使用する場合は、分圧しマイコンの保護をしてください。**
