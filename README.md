@@ -1,5 +1,6 @@
 RDM-01　-DTMF decoder module- manual
 ===
+
 ## RDM-01について
 - **開発背景**
 
@@ -23,7 +24,7 @@ RDM-01　-DTMF decoder module- manual
 
  
  ## 使い方
-  1. **信号の取得方法**
+ **1. 信号の取得方法**
   
   RDM-01は5つのGPIOとVCC、GNDの計７つのピンを使います。
 
@@ -51,7 +52,7 @@ RDM-01　-DTMF decoder module- manual
 Arduino等のマイコンでQ1~Q4に対応したピンをReadすると、表の通りの結果を得ることができます。
 連続してDTMFの音を出力することで、送信できるデータ量を増やし、より複雑な処理をすることが可能になります。
 
-2. **有線、無線通信の切り替え**
+**2. 有線、無線通信の切り替え**
 
 RDM-01は有線通信、無線通信のどちらもできるように設計しました。
 
@@ -63,16 +64,16 @@ RDM-01は有線通信、無線通信のどちらもできるように設計し�
 
 色々と試していただければと思います。
 
-そして通信方法の切り替え方法ですが、基板に実装されているスイッチを切り替えて行います。
+そして通信方法の切り替え方法ですが、基板に実装されているスライドスイッチを切り替えて行います。
 
 **初期ロットはミスにより、実際のスイッチの位置と、機能を示す印刷の内容が入れ違いになっています。正しくは下の図の通りです。**
 
-
+ ![switchDetal](http://www.rino-make-fun.com/wp-content/uploads/2019/01/switchDetail.png)
 
 ## サンプルコード
 このリポジトリではArduinoを使ったサンプルコードを提供しています。
 
-サンプルコードは下記ピン設定で実行されています。
+サンプルコードは下記ピン設定で実行されています。動作に関してはソースコードをご確認ください。
  - +5V -> ５Vピン　
  - GND -> GNDピン
  - Q1 -> 6番ピン
@@ -82,6 +83,18 @@ RDM-01は有線通信、無線通信のどちらもできるように設計し�
  - StD -> 2番ピン(割り込み0番ピン)
  
  ![Arduino](http://www.rino-make-fun.com/wp-content/uploads/2019/01/IMG_2194.jpg)
+ 
+## その他
+RDM-01をすぐに使って試せるように、Amazon Echoシリーズで使用するAlexaスキルを開発し、リリースしております。
+ロボットとして遊べるようにすでにプリセットされたコマンドもありますので、ご活用ください。
 
+[Alexaスキル”音リモコン”](https://www.amazon.co.jp/rino-products-%E9%9F%B3%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/dp/B07KRBKFFJ)
 
+[スキル説明　& コマンドリスト](http://www.rino-make-fun.com/2018/11/22/alexa-skill-%E9%9F%B3%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/)
+
+## Licence
+This software is released under the MIT License, see LICENSE.
+
+## Authors
+Norippy in rino products(http://www.rino-make-fun.com/)
 
