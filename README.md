@@ -22,6 +22,8 @@ RDM-01　-DTMF decoder module- manual
  
 この音は特定の２種類の周波数の合成波(１６種類あります)で、２種類の音をICが解析することで割り当てられた特定の数字として認識し、その結果を４つのピンのHIGH、LOWで表現します。
 
+[MT8870 datasheet](https://www.microsemi.com/document-portal/doc_download/127041-mt8870d-datasheet-oct2006)
+
  
  ## 使い方
  **1. 信号の取得方法**
