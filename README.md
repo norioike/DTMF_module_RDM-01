@@ -94,6 +94,13 @@ RDM-01をすぐに使って試せるように、Amazon Echoシリーズで使用
 
 [スキル説明　& コマンドリスト](http://www.rino-make-fun.com/2018/11/22/alexa-skill-%E9%9F%B3%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/)
 
+## 購入方法
+先行して手売り販売を行なっております。
+
+イベントなどでお会いした時に声をかけていただければと思います。
+
+また近日中にweb販売も行います。
+
 ## Licence
 This software is released under the MIT License, see LICENSE.
 
