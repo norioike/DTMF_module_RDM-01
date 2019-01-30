@@ -70,7 +70,7 @@ RDM-01は有線通信、無線通信のどちらもできるように設計し�
 
 **初期ロットはミスにより、実際のスイッチの位置と、機能を示す印刷の内容が入れ違いになっています。正しくは下の図の通りです。**
 
- ![switchDetal](http://www.rino-make-fun.com/wp-content/uploads/2019/01/switchDetail.png)
+ ![switchDetal](http://www.rino-make-fun.com/wp-content/uploads/2019/01/switchDetailda-01.jpg)
 
 ## サンプルコード
 このリポジトリではArduinoを使ったサンプルコードを提供しています。
