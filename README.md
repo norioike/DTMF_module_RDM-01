@@ -90,9 +90,13 @@ RDM-01は有線通信、無線通信のどちらもできるように設計し�
 RDM-01をすぐに使って試せるように、Amazon Echoシリーズで使用するAlexaスキルを開発し、リリースしております。
 ロボットとして遊べるようにすでにプリセットされたコマンドもありますので、ご活用ください。
 
+またDTMFの信号は特殊な音ではなく、フリーで生成することが可能です。具体的にはAudacity等の音声ソフトウェアで簡単に作ることができます。
+
 [Alexaスキル”音リモコン”](https://www.amazon.co.jp/rino-products-%E9%9F%B3%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/dp/B07KRBKFFJ)
 
 [スキル説明　& コマンドリスト](http://www.rino-make-fun.com/2018/11/22/alexa-skill-%E9%9F%B3%E3%83%AA%E3%83%A2%E3%82%B3%E3%83%B3/)
+
+[Audacity](https://www.audacityteam.org/)
 
 ## 購入方法
 先行して手売り販売を行なっております。
