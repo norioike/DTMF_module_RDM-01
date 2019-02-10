@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://obniz.io/js/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/obniz@1.16.1/obniz.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="obniz-debug"></div>
+<h1>obniz instant html</h1>
+<div id="print"></div>
+
+<script>
+  
+let Decode = ["D","1", "2", "3", "4","5", "6", "7", "8","9", "0", "*", "#","A", "B", "C"]
+
+var flg = false;
+var obniz = new Obniz("OBNIZ_ID_HERE");
+obniz.onconnect = async function () {
+    
+//電源の設定
+  var usb = obniz.wired("USB" , {gnd:5, vcc:6} );
+  usb.on();
+  
+  //ディスプレイ
+  obniz.display.clear();
+  obniz.display.print("RDM-01起動！");
+ 
+  //メインループ
+  obniz.repeat(async function(){
+    if(await obniz.io0.inputWait() == true && flg == false){//StDの反応を確認し、反応しているかどうか確認する。
+      flg = true
+      q1 = await obniz.io4.inputWait();
+      q2 = await obniz.io3.inputWait();
+      q3 = await obniz.io2.inputWait();
+      q4 = await obniz.io1.inputWait();
+      
+      var result = (q4 << 3) +  (q3 << 2) +  (q2 << 1) + q1
+
+      obniz.display.clear();
+      obniz.display.print(Decode[result]);
+      console.log(Decode[result])//PCの画面上にもログとして表示する
+      await obniz.wait(10);
+    }else if(await obniz.io0.inputWait() == false && flg == true){
+     flg = false 
+    }
+  }) 
+}
+
+</script>
+</body>
+</html>
